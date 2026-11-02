@@ -1,0 +1,23 @@
+{
+  "name": "one-tap-moments",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted one-tap microblog, shortcuts, CLI and MCP",
+  "bin": {
+    "moment": "./bin/moment.mjs"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "mcp": "node mcp/stdio.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
